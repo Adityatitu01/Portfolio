@@ -9,10 +9,10 @@ const Navbar = () => {
         <img className='mx-5 w-10' src={logo} alt="logo" />
     </div>
     <div className="flex mx-24 items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaTwitter />
-        <FaInstagram />
+        <a className='text-blue-500' href="https://www.linkedin.com/in/aditya-tiwari-31b785250/"><FaLinkedin /></a>
+        <a className='' href="https://github.com/Adityatitu01"><FaGithub /></a>
+        <a className='text-cyan-500' href="https://x.com/AdityaTituu"><FaTwitter /></a>
+        <a className='text-pink-600' href=""><FaInstagram /></a>
     </div>
    </nav>
   );
