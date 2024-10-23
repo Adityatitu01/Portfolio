@@ -53,7 +53,7 @@ const Contact = () => {
         {showNotification && (
           <motion.div
             className={`fixed top-5 right-5 ${
-              submitted ? "bg-green-500" : "bg-red-500"
+              submitted ? "" : ""
             } text-white py-2 px-4 rounded shadow-lg`}
             initial={{ opacity: 0, x: 100, scale: 0.8 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -62,7 +62,7 @@ const Contact = () => {
           >
             <span
               className={`${
-                submitted ? "font-semibold text-green-100" : ""
+                submitted ? "font-semibold text-green-500" : ""
               }`}
             >
               {isSending ? (
