@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import About from './Components/About';
-import Technologies from './Components/Technologies';
-import Experience from './Components/Experience';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
-import Loading from './Components/Loading'; // Import the Loading component
+import React, { useState, useEffect } from "react";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Technologies from "./Components/Technologies";
+import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Loading from "./Components/Loading"; // Import the Loading component
 
 const App = () => {
   // State to track when loading is done
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Set a timer for the loading animation (e.g., 4 seconds)
+    // Set a timer for the loading animation (e.g., 2 seconds)
     const timer = setTimeout(() => {
-      setLoading(false); // After 4 seconds, stop loading
+      setLoading(false); // After 2 seconds, stop loading
     }, 2000); // Change this duration if you need a different length for loading
 
     return () => clearTimeout(timer); // Clear timer on unmount

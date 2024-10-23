@@ -1,3 +1,4 @@
+import { a } from "framer-motion/client";
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
@@ -9,68 +10,62 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "2022 (July) -  2022 (October)",
+    role: "Frontend Developer Intern",
+    company: "Tech Kratz.",
+    description: `Worked as a front-end developer at Tech Kratz, where I was responsible for developing and maintaining responsive, user-friendly web interfaces. I collaborated closely with the design team to translate wireframes and mockups into clean, efficient code using modern front-end technologies. My role also involved ensuring cross-browser compatibility, optimizing web performance, and troubleshooting UI/UX issues to enhance user experience. I worked on diverse projects, contributing to innovative web solutions.`,
+    technologies: ["Javascript", "Tailwind", "React.js"],
   },
   {
     year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    role: "Web-Developer",
+    company: "Freelancer",
+    description: `As a freelance web developer, I specialize in building custom, responsive web applications using React, Node.js, and MongoDB. With expertise in Tailwind CSS, I create sleek, modern interfaces that are both visually appealing and highly functional. I focus on delivering full-stack solutions that meet client needs, from front-end development to back-end APIs and database integration. My process involves collaborating closely with clients, ensuring each project is optimized for performance, scalability, and a seamless user experience.`,
+    technologies: [
+      "Html",
+      "Tailwind",
+      "Javascript",
+      "React",
+      "Nodejs",
+      "mongoDb",
+    ],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Event Management Website",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "My event management website allows organizers to create and manage events, track stats, and handle registrations. Users can browse events, register as attendees or volunteers, and purchase tickets for paid events. Built with a secure login system, the platform provides a seamless experience for both users and organizers, featuring real-time updates and intuitive navigation.",
+    technologies: ["React", "Tailwind", "Node.js", "MongoDB"],
   },
   {
-    title: "Task Management App",
+    title: "Word-Craft Blog App",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "This blog app enables users to create, edit, and publish posts with rich-text formatting and media integration. It offers category-based browsing, a commenting system for user engagement, and a responsive design for smooth use on all devices. With secure authentication, it ensures a safe environment for both authors and readers.",
+    technologies: ["React", "Material Ui", "Nodejs", "Expressjs", "MongoDb"],
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "This portfolio website showcases a variety of web development projects, highlighting skills in React, Tailwind CSS, and full-stack development. It features a clean, responsive design with sections for project details, skills, and contact information, providing an engaging and professional overview of the developer's expertise.",
+    technologies: ["Javascript", "Tailwind", "React", "Saas"],
   },
   {
-    title: "Blogging Platform",
+    title: "Currency Converter",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "This currency converter app enables users to quickly convert between multiple currencies using real-time exchange rates. It features an intuitive interface for easy access and customization of favorite currencies.",
+    technologies: ["Javascript", "Tailwind", "Reactjs"],
+  },
+  {
+    title: "Password Generator",
+    image: project4,
+    description:
+      "This password generator app creates strong, secure passwords based on customizable criteria such as length, inclusion of symbols, numbers, and uppercase or lowercase letters. It features a simple, user-friendly interface with copy-to-clipboard functionality for convenience, ensuring optimal security for online accounts.",
+    technologies: ["Javascript", "Tailwind", "Reactjs"],
   },
 ];
-
-export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
-};
