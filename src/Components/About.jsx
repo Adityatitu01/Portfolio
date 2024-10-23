@@ -24,9 +24,9 @@ const About = () => {
       initial={{opacity:0, x:100}}
       transition={{duration:0.5}} className="w-full lg:w-1/2">
           <div className="flex justify-center flex-col lg:justify-start md:justify-center items-center">
-            <p className='my-2 max-w-xl py-6 lg:-mt-4 lg:-ml-36 '>{ABOUT_TEXT} <motion.div  whileInView={{opacity:1, y:0}}
+            <p className='my-2 max-w-xl py-6 lg:-mt-4 lg:-ml-36 flex items-center flex-col lg:items-start '>{ABOUT_TEXT} <motion.div  whileInView={{opacity:1, y:0}}
       initial={{opacity:0, y:70}}
-      transition={{duration:0.5}} className='bg-slate-50 w-36 flex items-center gap-1 justify-center lg:mt-4 rounded md:mt-4 sm:mt-4 text-center md:ml-48 sm:ml-44 ml-20 mt-2 lg:ml-0'><h2 className='inline text-2xl text-neutral-600 font-semibold '>Resume</h2><a className='text-3xl font-semibold ' href="https://drive.google.com/file/d/1BOpu1Qt0BwTmmY_-F1ePHwbF48iLA9WT/view?usp=drive_link"> <IoMdDownload className='inline text-3xl text-indigo-500' /></a></motion.div> </p>
+      transition={{duration:0.5}} className='bg-slate-50 w-36 flex items-center gap-1 rounded-md justify-center mt-3'><h2 className='inline text-2xl text-neutral-600 font-semibold '>Resume</h2><a className='text-3xl font-semibold ' href="https://drive.google.com/file/d/1BOpu1Qt0BwTmmY_-F1ePHwbF48iLA9WT/view?usp=drive_link"> <IoMdDownload className='inline text-3xl text-indigo-500' /></a></motion.div> </p>
 
           </div>
         </motion.div>
