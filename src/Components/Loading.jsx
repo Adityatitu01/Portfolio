@@ -8,15 +8,14 @@ const welcomeMessages = [
     'Bonjour',  // French
     'Svagatam', // Nepali
     '欢迎',  // Chinese
-    'ようこそ',  // Japanese
 ];
 
 // List of colors corresponding to each welcome message
 const colors = [
-  '#FF5733',  // English (Orange)
-  '#33FF57',  // Hindi (Green)
-  '#3357FF',  // French (Blue)
-  '#FF33A8',  // Nepali (Pink)
+  '#3949AB',  // English (indigo)
+  '#F4C430',  // Hindi (Saffron)
+  '#00ffff',  // French (aqua)
+  '#FF4040',  // Nepali (red)
   '#F4D03F',  // Chinese (Yellow)
   '#8E44AD',  // Japanese (Purple)
 ];
