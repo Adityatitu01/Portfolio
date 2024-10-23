@@ -159,7 +159,7 @@ const Contact = () => {
         >
           <form
             onSubmit={onSubmit}
-            className="w-full max-w-lg bg-gray-100 p-8 rounded-lg shadow-lg"
+            className=" max-w-lg bg-gray-100 p-6 w-full rounded-lg shadow-lg"
           >
             <h2 className="text-2xl font-semibold mb-6 text-indigo-600 text-center">
               Get in Touch

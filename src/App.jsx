@@ -6,6 +6,7 @@ import Technologies from "./Components/Technologies";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer"
 import Loading from "./Components/Loading"; // Import the Loading component
 
 const App = () => {
@@ -32,7 +33,7 @@ const App = () => {
           {/* Global background */}
           <div className="fixed top-0 left-0 z-[-1] w-full min-h-screen"></div>
           {/* Main container */}
-          <div className="container px-5 md:m-auto">
+          <div className="container px-3 md:m-auto">
             <Navbar />
             <Hero />
             <About />
@@ -41,6 +42,7 @@ const App = () => {
             <Projects />
             <Contact />
           </div>
+          <Footer />
         </div>
       )}
     </>

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className='border-b justify-center lg:-ml-24 2xl:mx-16 md:-ml-22 border-neutral-900'>
+    <div className='border-b pb-11 justify-center lg:-ml-24 2xl:mx-7 md:-ml-22 border-neutral-800'>
       <h1 className='py-20 text-center text-4xl'>
         About <span className='text-neutral-500'>Me</span>
       </h1>
@@ -16,7 +16,7 @@ const About = () => {
           <motion.div whileInView={{opacity:1, x:0}}
       initial={{opacity:0, x:-100}}
       transition={{duration:0.5}} className="flex items-center text-center justify-center">
-            <img className='rounded-2xl h-80' src={aboutImg} alt="About" />
+            <img className='rounded-2xl h-80 lg:ml-4' src={aboutImg} alt="About" />
           </motion.div>
           
         </div>
