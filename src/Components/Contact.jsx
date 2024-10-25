@@ -90,8 +90,12 @@ const Contact = () => {
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-      >
-        Contact <span className="text-neutral-500">Me</span>
+        
+      > <motion.span  initial={{ rotate: 0 }}
+      whileHover={{ rotate: [360,0] }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      style={{ display: "inline-block", cursor: "pointer" }} >
+        Contact </motion.span> <span className="text-neutral-500">Me</span>
       </motion.h1>
 
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center lg:mx-28">

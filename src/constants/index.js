@@ -39,6 +39,7 @@ export const PROJECTS = [
     description:
       "My event management website allows organizers to create and manage events, track stats, and handle registrations. Users can browse events, register as attendees or volunteers, and purchase tickets for paid events. Built with a secure login system, the platform provides a seamless experience for both users and organizers, featuring real-time updates and intuitive navigation.",
     technologies: ["React", "Tailwind", "Node.js", "MongoDB"],
+    link: "https://event-land.vercel.app/",
   },
   {
     title: "Word-Craft Blog App",
@@ -46,6 +47,7 @@ export const PROJECTS = [
     description:
       "This blog app enables users to create, edit, and publish posts with rich-text formatting and media integration. It offers category-based browsing, a commenting system for user engagement, and a responsive design for smooth use on all devices. With secure authentication, it ensures a safe environment for both authors and readers.",
     technologies: ["React", "Material Ui", "Nodejs", "Expressjs", "MongoDb"],
+    link: "https://blog-app-word-craft.vercel.app/",
   },
   {
     title: "Portfolio Website",
@@ -53,6 +55,7 @@ export const PROJECTS = [
     description:
       "This portfolio website showcases a variety of web development projects, highlighting skills in React, Tailwind CSS, and full-stack development. It features a clean, responsive design with sections for project details, skills, and contact information, providing an engaging and professional overview of the developer's expertise.",
     technologies: ["Javascript", "Tailwind", "React", "Saas"],
+    link: "https://aditya-personal-portfolio2.vercel.app/",
   },
   {
     title: "Currency Converter",
@@ -60,6 +63,7 @@ export const PROJECTS = [
     description:
       "This currency converter app enables users to quickly convert between multiple currencies using real-time exchange rates. It features an intuitive interface for easy access and customization of favorite currencies.",
     technologies: ["Javascript", "Tailwind", "Reactjs"],
+    link: "https://currency-converter-kohl-ten.vercel.app/",
   },
   {
     title: "Password Generator",
@@ -67,5 +71,6 @@ export const PROJECTS = [
     description:
       "This password generator app creates strong, secure passwords based on customizable criteria such as length, inclusion of symbols, numbers, and uppercase or lowercase letters. It features a simple, user-friendly interface with copy-to-clipboard functionality for convenience, ensuring optimal security for online accounts.",
     technologies: ["Javascript", "Tailwind", "Reactjs"],
+    link: "https://password-generator-vert-two.vercel.app/",
   },
 ];

@@ -10,7 +10,11 @@ const Experience = () => {
     <div className='border-b border-neutral-900 pb-4 '>
         <motion.h1  whileInView={{opacity:1, y:0}}
             initial={{opacity:0, y:-100}}
-            transition={{duration:0.5}} className='my-20 text-center text-4xl'>Experience</motion.h1>
+            transition={{duration:0.5}} className='my-20 text-center text-4xl'> <motion.span initial={{ rotate: 0 }}
+            whileHover={{ rotate: [360,0] }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            style={{ display: "inline-block", cursor: "pointer" }} >Experience </motion.span></motion.h1>
+
       <div>
         {EXPERIENCES.map((experience,index)=>{
           return <div key={index} className='mb-8 flex flex-wrap lg:justify-center' >

@@ -8,8 +8,11 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className='border-b pb-11 justify-center lg:-ml-24 2xl:mx-7 md:-ml-22 border-neutral-800'>
-      <h1 className='py-20 text-center text-4xl'>
-        About <span className='text-neutral-500'>Me</span>
+      <h1 className='py-20 text-center text-4xl'> 
+      <motion.span initial={{ rotate: 0 }}
+      whileHover={{ rotate: [360,0] }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      style={{ display: "inline-block", cursor: "pointer" }} > About </motion.span> <span className='text-neutral-500'>Me</span>
       </h1>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
