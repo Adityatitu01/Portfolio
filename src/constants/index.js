@@ -39,7 +39,7 @@ export const PROJECTS = [
     description:
       "My event management website allows organizers to create and manage events, track stats, and handle registrations. Users can browse events, register as attendees or volunteers, and purchase tickets for paid events. Built with a secure login system, the platform provides a seamless experience for both users and organizers, featuring real-time updates and intuitive navigation.",
     technologies: ["React", "Tailwind", "Node.js", "MongoDB"],
-    link: "https://event-land.vercel.app/",
+    link: "https://festifys.vercel.app/",
   },
   {
     title: "Word-Craft Blog App",
