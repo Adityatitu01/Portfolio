@@ -10,14 +10,14 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2022 (July) -  2022 (October)",
+    year: "2023 (Sept) -  2023 (Nov)",
     role: "Frontend Developer Intern",
     company: "Tech Kratz.",
     description: `Worked as a front-end developer at Tech Kratz, where I was responsible for developing and maintaining responsive, user-friendly web interfaces. I collaborated closely with the design team to translate wireframes and mockups into clean, efficient code using modern front-end technologies. My role also involved ensuring cross-browser compatibility, optimizing web performance, and troubleshooting UI/UX issues to enhance user experience. I worked on diverse projects, contributing to innovative web solutions.`,
     technologies: ["Javascript", "Tailwind", "React.js"],
   },
   {
-    year: "2022 - 2023",
+    year: "2022 - 2024",
     role: "Web-Developer",
     company: "Freelancer",
     description: `As a freelance web developer, I specialize in building custom, responsive web applications using React, Node.js, and MongoDB. With expertise in Tailwind CSS, I create sleek, modern interfaces that are both visually appealing and highly functional. I focus on delivering full-stack solutions that meet client needs, from front-end development to back-end APIs and database integration. My process involves collaborating closely with clients, ensuring each project is optimized for performance, scalability, and a seamless user experience.`,
@@ -27,6 +27,7 @@ export const EXPERIENCES = [
       "Javascript",
       "React",
       "Nodejs",
+      "Expressjs",
       "mongoDb",
     ],
   },
@@ -34,20 +35,20 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Event Management Website",
+    title: "FESTIFY | Event Management Website",
     image: project1,
     description:
       "My event management website allows organizers to create and manage events, track stats, and handle registrations. Users can browse events, register as attendees or volunteers, and purchase tickets for paid events. Built with a secure login system, the platform provides a seamless experience for both users and organizers, featuring real-time updates and intuitive navigation.",
     technologies: ["React", "Tailwind", "Node.js", "MongoDB"],
-    link: "https://festifys.vercel.app/",
+    link: "https://festify-sigma.onrender.com/",
   },
   {
-    title: "Word-Craft Blog App",
+    title: "BLOGIFY | Blogging Platform",
     image: project2,
     description:
       "This blog app enables users to create, edit, and publish posts with rich-text formatting and media integration. It offers category-based browsing, a commenting system for user engagement, and a responsive design for smooth use on all devices. With secure authentication, it ensures a safe environment for both authors and readers.",
-    technologies: ["React", "Material Ui", "Nodejs", "Expressjs", "MongoDb"],
-    link: "https://blog-app-word-craft.vercel.app/",
+    technologies: ["React","Tailwind", "Clerk", "Nodejs", "Expressjs", "MongoDb"],
+    link: "https://github.com/Adityatitu01/Blogify",
   },
   {
     title: "Portfolio Website",

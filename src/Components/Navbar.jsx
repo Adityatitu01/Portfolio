@@ -1,21 +1,147 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
-import logo from "../assets/kevinRushLogo.png";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-   <nav className="mb-15 flex items-center m-auto xl:mx-32 justify-between py-14">
-    <div className="flex flex-shrink-0 items-center">
-        <img className='mx-5 w-10' src={logo} alt="logo" />
-    </div>
-    <div className="flex mx-24 items-center justify-center gap-4 text-2xl">
-        <a className='text-blue-500' href="https://www.linkedin.com/in/aditya-tiwari-31b785250/"><FaLinkedin /></a>
-        <a className='' href="https://github.com/Adityatitu01"><FaGithub /></a>
-        <a className='text-cyan-500' href="https://x.com/AdityaTituu"><FaTwitter /></a>
-        <a className='text-pink-600' href=""><FaInstagram /></a>
-    </div>
-   </nav>
+    <nav className="py-10 px-10 xl:px-32 flex items-center justify-between text-gray-200">
+      {/* Logo / Title */}
+      <div className="flex items-center">
+        <h2 className="text-xl font-bold tracking-wide transition-colors duration-200">
+          Portfolio
+        </h2>
+      </div>
+
+      {/* Desktop Navigation Links */}
+      <div className="hidden md:flex items-center space-x-8">
+        <a
+          href="#about"
+          className="font-medium hover:text-blue-400 transition-colors duration-300"
+        >
+          About
+        </a>
+        <a
+          href="#experience"
+          className="font-medium hover:text-blue-400 transition-colors duration-300"
+        >
+          Experience
+        </a>
+        <a
+          href="#projects"
+          className="font-medium hover:text-blue-400 transition-colors duration-300"
+        >
+          Projects
+        </a>
+        <a
+          href="#contact"
+          className="font-medium hover:text-blue-400 transition-colors duration-300"
+        >
+          Contact
+        </a>
+        <div className="flex items-center space-x-4 text-2xl">
+          <a
+            className="hover:text-blue-500 text-blue-400 hover:scale-110 transition-transform duration-300"
+            href="https://www.linkedin.com/in/aditya-tiwari-31b785250/"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="hover:text-gray-500 hover:scale-110 transition-transform duration-300"
+            href="https://github.com/Adityatitu01"
+          >
+            <FaGithub />
+          </a>
+          <a
+            className="hover:text-cyan-500 text-cyan-500 hover:scale-110 transition-transform duration-300"
+            href="https://x.com/AdityaTituu"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            className="hover:text-pink-600 text-pink-400 hover:scale-110 transition-transform duration-300"
+            href="#"
+          >
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
+
+      {/* Mobile Menu Icon */}
+      <button
+        className="md:hidden text-2xl hover:text-gray-500 transition-colors duration-200"
+        onClick={toggleMenu}
+        aria-label="Toggle Menu"
+      >
+        {isMenuOpen ? <HiX /> : <HiMenu />}
+      </button>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="absolute top-20 left-0 w-full bg-black bg-opacity-90 z-50 shadow-lg flex flex-col items-center space-y-6 py-6 md:hidden">
+          <a
+            href="#about"
+            className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About
+          </a>
+          <a
+            href="#experience"
+            className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Experience
+          </a>
+          <a
+            href="#projects"
+            className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </a>
+          <div className="flex items-center space-x-4 text-2xl">
+            <a
+              className="hover:text-blue-500 hover:scale-110 transition-transform duration-300"
+              href="https://www.linkedin.com/in/aditya-tiwari-31b785250/"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              className="hover:text-gray-500 hover:scale-110 transition-transform duration-300"
+              href="https://github.com/Adityatitu01"
+            >
+              <FaGithub />
+            </a>
+            <a
+              className="hover:text-cyan-500 hover:scale-110 transition-transform duration-300"
+              href="https://x.com/AdityaTituu"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              className="hover:text-pink-600 hover:scale-110 transition-transform duration-300"
+              href="#"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+        </div>
+      )}
+    </nav>
   );
-}
+};
 
 export default Navbar;
