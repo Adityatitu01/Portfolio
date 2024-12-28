@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -7,6 +7,15 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setIsMenuOpen(false); // Close the menu on mobile
   };
 
   return (
@@ -22,24 +31,28 @@ const Navbar = () => {
       <div className="hidden md:flex items-center space-x-8">
         <a
           href="#about"
+          onClick={(e) => handleScroll(e, "about")}
           className="font-medium hover:text-blue-400 transition-colors duration-300"
         >
           About
         </a>
         <a
           href="#experience"
+          onClick={(e) => handleScroll(e, "experience")}
           className="font-medium hover:text-blue-400 transition-colors duration-300"
         >
           Experience
         </a>
         <a
           href="#projects"
+          onClick={(e) => handleScroll(e, "projects")}
           className="font-medium hover:text-blue-400 transition-colors duration-300"
         >
           Projects
         </a>
         <a
           href="#contact"
+          onClick={(e) => handleScroll(e, "contact")}
           className="font-medium hover:text-blue-400 transition-colors duration-300"
         >
           Contact
@@ -86,29 +99,29 @@ const Navbar = () => {
         <div className="absolute top-20 left-0 w-full bg-black bg-opacity-90 z-50 shadow-lg flex flex-col items-center space-y-6 py-6 md:hidden">
           <a
             href="#about"
+            onClick={(e) => handleScroll(e, "about")}
             className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
-            onClick={() => setIsMenuOpen(false)}
           >
             About
           </a>
           <a
             href="#experience"
+            onClick={(e) => handleScroll(e, "experience")}
             className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
-            onClick={() => setIsMenuOpen(false)}
           >
             Experience
           </a>
           <a
             href="#projects"
+            onClick={(e) => handleScroll(e, "projects")}
             className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
-            onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </a>
           <a
             href="#contact"
+            onClick={(e) => handleScroll(e, "contact")}
             className="font-medium text-gray-300 hover:text-blue-400 transition-colors duration-300"
-            onClick={() => setIsMenuOpen(false)}
           >
             Contact
           </a>

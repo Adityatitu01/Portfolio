@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="border-b border-neutral-900 py-10 relative">
+    <div id="contact" className="border-b border-neutral-900 py-10 relative">
       {/* Top-right animated notification */}
       <AnimatePresence>
         {showNotification && (

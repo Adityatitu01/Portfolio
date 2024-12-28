@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className='border-b pb-11 justify-center lg:-ml-24 2xl:mx-7 md:-ml-22 border-neutral-800'>
+    <div id='about' className='border-b pb-11 justify-center lg:-ml-24 2xl:mx-7 md:-ml-22 border-neutral-800'>
       <h1 className='py-20 text-center text-4xl'> 
       <motion.span initial={{ rotate: 0 }}
       whileHover={{ rotate: [360,0] }}
@@ -29,7 +29,8 @@ const About = () => {
           <div className="flex justify-center flex-col lg:justify-start md:justify-center items-center">
             <p className='my-2 max-w-xl py-6 lg:-mt-4 lg:-ml-36 flex items-center flex-col lg:items-start '>{ABOUT_TEXT} <motion.div  whileInView={{opacity:1, y:0}}
       initial={{opacity:0, y:70}}
-      transition={{duration:0.5}} className='bg-slate-50 w-36 flex items-center gap-1 rounded-md justify-center mt-3'><h2 className='inline text-2xl text-neutral-600 font-semibold '>Resume</h2><a className='text-3xl font-semibold ' href="https://drive.google.com/file/d/1BOpu1Qt0BwTmmY_-F1ePHwbF48iLA9WT/view?usp=drive_link"> <IoMdDownload className='inline text-3xl text-indigo-500' /></a></motion.div> </p>
+      transition={{duration:0.5}} className='bg-slate-50 w-36 flex items-center gap-1 rounded-md justify-center mt-3'><h2 className='inline text-2xl text-neutral-600 font-semibold '>
+        Resume</h2><a className='text-3xl font-semibold ' href="https://drive.google.com/file/d/1ckk32ACzVLXf2mv84K1fpMPSvzp3XoBy/view?usp=sharing"> <IoMdDownload className='inline text-3xl text-indigo-500' /></a></motion.div> </p>
 
           </div>
         </motion.div>
