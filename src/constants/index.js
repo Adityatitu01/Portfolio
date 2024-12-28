@@ -48,15 +48,7 @@ export const PROJECTS = [
     description:
       "This blog app enables users to create, edit, and publish posts with rich-text formatting and media integration. It offers category-based browsing, a commenting system for user engagement, and a responsive design for smooth use on all devices. With secure authentication, it ensures a safe environment for both authors and readers.",
     technologies: ["React","Tailwind", "Clerk", "Nodejs", "Expressjs", "MongoDb"],
-    link: "https://github.com/Adityatitu01/Blogify",
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "This portfolio website showcases a variety of web development projects, highlighting skills in React, Tailwind CSS, and full-stack development. It features a clean, responsive design with sections for project details, skills, and contact information, providing an engaging and professional overview of the developer's expertise.",
-    technologies: ["Javascript", "Tailwind", "React", "Saas"],
-    link: "https://aditya-personal-portfolio2.vercel.app/",
+    link: "https://blogify-blue-chi.vercel.app/",
   },
   {
     title: "Currency Converter",
